@@ -1,0 +1,206 @@
+/*---------------------------------------------------------------------------------
+   Common Styles
+---------------------------------------------------------------------------------*/
+
+* {
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	position: relative;
+	width: 98%;
+	height: 96%;
+	margin: 0.8em auto;
+	font-family: Tahoma, Arial;
+    background: url('../images/olaf.jpg') no-repeat center center fixed;
+    background-size: cover;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+
+}
+
+a {
+	text-decoration: none;
+	color: white;
+}
+
+ul li {	
+	display: inline;
+}
+
+h1 {
+	font-weight: 900;
+	font-size: 2em;
+	padding: 0.3em;
+	color: black;
+    text-align: right;
+    margin-right: 55px;
+    margin-top: 20px;
+
+}
+
+/*---------------------------------------------------------------------------------
+   Game Section Styles
+---------------------------------------------------------------------------------*/
+
+.game {
+	position: relative;
+    background: rgba(250,250,250,.3);
+	width: 500px;
+	height: 475px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	margin: 0 auto;
+    margin-right: 20px;
+    border: 5px solid black;
+}
+
+#olaf {
+    margin: 0 auto;	
+	rgba(250,250,250,.3);
+    padding: 10px;
+    height: 5px;
+	font-size: 1.25em;
+	font-weight: 600;
+	display: block;
+	color: black;
+    text-align: center;
+}
+
+#feedback {
+	margin: 0 auto;	
+	rgba(250,250,250,.3);
+	padding: 25px;
+    height: 60px;
+	font-size: 1.25em;
+	font-weight: 600;
+	display: block;
+	color: black;
+    text-align: center;
+}
+
+h3 {
+    text-align: center;
+    font-size: 120%;
+    height: 90px;
+}
+
+.game p {
+	margin-top: 0.5em;
+	font-size: 1.8em;
+	padding-bottom: 0.5em;
+    text-align: center;
+}
+
+#count {
+	color: black;
+	font-weight: 700;
+	font-size: 1.5em;
+}
+
+input {
+	width: 300px;
+	height: 50px;
+	display: block;
+	padding: 0.8em 0;
+	margin: 0.8em auto 0;
+	background: white;
+	color: black;
+	border: solid 1px #1f253d;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+}
+
+input.button {
+    background: -webkit-linear-gradient(#0000CC, #00007A);
+	background: linear-gradient(#0000CC, #00007A);
+	color: white;
+	font-size: 2em;
+	padding: 0.2em;
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-ms-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+}
+
+input.button:hover {
+	background: #00007A;
+	color: #fff;
+	-webkit-transition: background 1s ease-in-out;
+	-moz-transition: background 1s ease-in-out;
+	-ms-transition: background 1s ease-in-out;
+	-o-transition: background 1s ease-in-out;
+	transition: background 1s ease-in-out;
+	cursor: pointer;
+}
+
+input.text {
+	text-align: center;
+	padding: 0.2em;
+	font-size: 2em;
+}
+
+input:focus {
+	outline: none !important;
+}
+
+::-webkit-input-placeholder {
+   color: #95a5a6;
+}
+
+:-moz-placeholder { /* Firefox 18- */
+   color: #95a5a6;
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+   color: #95a5a6; 
+}
+
+:-ms-input-placeholder {  
+   color: #95a5a6; 
+}
+
+ul.guessBox {
+	height: 80px;
+	margin: -8px auto 0;
+    background: rgba(250,250,250,.7);
+	padding: 0.5em;
+	display: block;
+	line-height: 2em;
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+	color: #fff;
+	overflow: auto;
+}
+ul.guessBox li {
+	display: inline;
+	background-color: #FF6666;
+	padding: 0.3em;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	border-radius: 4px;
+	width: 95%;
+	margin: 0.2em;
+	color: #fff;
+}
+
+.playAgain {
+    display: none;
+    text-align: right;
+    margin-right: 100px;
+    font-size: 25px;
+    font-weight: 600;
+    padding: 10px;
+    color: white;
+}

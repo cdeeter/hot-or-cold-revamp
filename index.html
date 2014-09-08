@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+
+		<title>Olaf's Hot or Cold Guessing Game</title>
+
+		<!-- Meta Tags -->
+		<meta charset="utf-8"/>
+		
+		<!-- Stylesheets -->
+		<link rel="stylesheet" href="styles/reset.css">
+		<link href='http://fonts.googleapis.com/css?family=Lato:400,700,900,900italic' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" href="styles/style.css"/> 
+
+		<!-- JavaScript -->
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+		<script type="text/javascript" src="js/app.js"></script>
+	
+	</head>
+	<body>
+		
+		<header> <!--Header -->
+
+			<!-- logo text -->
+			<h1>Olaf's Hot or Cold Game</h1>
+
+		</header>
+
+		<section class="game"> <!-- Guessing Section -->
+            <h3>Olaf is thinking of a secret number between 1 and 100. <br/><br/> Enter your guess and he'll tell you how "hot" or "cold" it is relative to the number he's thinking of!</h3>
+            <h2 id="olaf">Olaf says:</h2>
+			<h2 id="feedback">
+            
+            </h2>
+
+			<form>
+				<input type="text" name="userGuess" id="userGuess" class="text" maxlength="3" autocomplete="off" placeholder="Enter your Guess" required/>
+      			<input type="submit" id="guessButton" class="button" name="submit" value="Guess"/>
+			</form>
+			
+      		<p>Guess #<span id="count">0</span>!</p>
+			
+			<ul id="guessList" class="guessBox clearfix">
+
+			</ul>
+
+
+		</section>
+        <section class="playAgain">
+            <ul class="clearfix">
+                <li><a class="new" href="#">Click here to play again!</a></li>
+            </ul>
+        </section>
+    </body>
+    </html>
