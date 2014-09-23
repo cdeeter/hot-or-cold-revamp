@@ -49,6 +49,10 @@ h1 {
    Game Section Styles
 ---------------------------------------------------------------------------------*/
 
+
+#container {
+	text-align: center;
+}
 .game {
 	position: relative;
     background: rgba(250,250,250,.3);
@@ -120,6 +124,7 @@ input {
 }
 
 input.button {
+	background-color: #0000CC;
     background: -webkit-linear-gradient(#0000CC, #00007A);
 	background: linear-gradient(#0000CC, #00007A);
 	color: white;
